@@ -23,12 +23,12 @@ class NotificationManager:
                     "content": content,
                     "severity": severity,
                     "action": action,
-                    "timestamp": datetime.now().isoformat()  # ✅ fixed
+                    "timestamp": datetime.now().isoformat()  
                 })
-                print(f"✅ Sent: {title}")
+                print(f"Sent: {title}")
             except Exception as e:
-                print(f"❌ Failed to send: {e}")
+                print(f"Failed to send: {e}")
     
 
-# Global instance
+
 notifier = NotificationManager()
